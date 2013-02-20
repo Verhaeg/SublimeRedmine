@@ -1,0 +1,3 @@
+[submodule "pyredminews"]
+	path = pyredminews
+	url = git://github.com/ianepperson/pyredminews.git

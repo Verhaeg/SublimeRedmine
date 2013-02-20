@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Redmine: List projects",
+        "command": "redmine_list_projects"
+    }
+]
