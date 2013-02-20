@@ -1,15 +1,16 @@
 import sublime
 import sys
 
-reloader_name = 'Package Control.redmine.reloader'
 from imp import reload
+
+reloader_name = 'Redmine.redmine.reloader'
 # Make sure all dependencies are reloaded on upgrade
 if reloader_name in sys.modules:
     reload(sys.modules[reloader_name])
 
-# try:
-#     # Python 3
-#     from .redmine import reloader
+try:
+    # Python 3
+    from .redmine import reloader
 
 #     from .redmine.commands.add_repository_channel_command import AddRepositoryChannelCommand
 #     from .redmine.commands.add_repository_command import AddRepositoryCommand
@@ -26,10 +27,9 @@ if reloader_name in sys.modules:
 
 #     from .redmine.package_cleanup import PackageCleanup
 
-# except (ValueError):
-#     # Python 2
-#     from redmine import reloader
-#     from redmine import sys_path
+except (ValueError):
+    # Python 2
+    from redmine import reloader
 
 #     from redmine.commands.add_repository_channel_command import AddRepositoryChannelCommand
 #     from redmine.commands.add_repository_command import AddRepositoryCommand
