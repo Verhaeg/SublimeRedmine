@@ -35,5 +35,31 @@
                 ]
             }
         ]
+    },
+    {
+        "caption": "Redmine",
+        "mnemonic": "r",
+        "id": "redmine",
+        "children":
+        [
+            {
+                "caption": "List Projects",
+                "mnemonic": "p",
+                "id": "redmine-list-projects",
+                "command": "redmine_list_projects"
+            },
+            {
+                "caption": "List Issues",
+                "mnemonic": "i",
+                "id": "redmine-list-issues",
+                "command": "redmine_list_issues"
+            },
+            {
+                "caption": "Time Entry",
+                "mnemonic": "t",
+                "id": "redmine-time-entry",
+                "command": "redmine_time_entry"
+            }
+        ]
     }
 ]

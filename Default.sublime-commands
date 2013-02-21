@@ -2,5 +2,13 @@
     {
         "caption": "Redmine: List projects",
         "command": "redmine_list_projects"
+    },
+    {
+        "caption": "Redmine: List issues",
+        "command": "redmine_list_issues"
+    },
+    {
+        "caption": "Redmine: List project issues",
+        "command": "redmine_list_project_issues"
     }
 ]

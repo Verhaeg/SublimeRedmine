@@ -18,7 +18,7 @@ for mod in sys.modules:
     if mod[0:15].lower().replace(' ', '_') == 'redmine' and sys.modules[mod] != None:
         reload_mods.append(mod)
 
-mod_prefix = 'Redmine.redmine'
+mod_prefix = 'redmine.redmine'
 
 mods_load_order = [
     '',
@@ -27,20 +27,8 @@ mods_load_order = [
     '.show_error',
     '.thread_progress',
 
-    # '.commands',
-    # '.commands.add_repository_channel_command',
-    # '.commands.add_repository_command',
-    # '.commands.create_binary_package_command',
-    # '.commands.create_package_command',
-    # '.commands.disable_package_command',
-    # '.commands.discover_packages_command',
-    # '.commands.enable_package_command',
-    # '.commands.existing_packages_command',
-    # '.commands.install_package_command',
-    # '.commands.list_packages_command',
-    # '.commands.remove_package_command',
-    # '.commands.upgrade_all_packages_command',
-    # '.commands.upgrade_package_command',
+    '.commands',
+    '.commands.list_projects_command'
 ]
 
 for suffix in mods_load_order:
